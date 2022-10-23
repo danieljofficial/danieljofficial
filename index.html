@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="headBackground">
+            <img src="interactive-card-details-form-main/images/bg-card-back.png" alt="cardBack" width="290rem" style="z-index: 0;" id="cardBack"> 
+            <div class="cvc">000</div>
+        </div>
+        <div class="frontCard">
+            <div class="items"> 
+                <div class="logos">
+                    <img src="interactive-card-details-form-main/images/LogoMakr-8996q4.png" alt="bigCircle" width="50px" height="50px">
+                    <img src="interactive-card-details-form-main/images/LogoMakr-8996q4 (1).png" alt="smallCircle" width="20px" height="20px">
+                </div>    
+                <div class="digits">
+                    0000 0000 0000 0000
+                </div>
+                <div class="text">
+                    <div class="name">JANE APPLESEED</div>
+                    <div class="expDate">00/00</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <form class="info">
+        <div class="remove">
+        <label for="name">CARDHOLDER NAME</label>
+        <br>
+        <input type="text" id="inputName" placeholder="e.g. Jane Appleseed" required><br>
+        <div class="nameError">Please fill out this field.</div><br>
+        <label for="name">CARD NUMBER</label>
+        <br>
+        <input type="text" id="inputNumber" placeholder="e.g. 1234 5678 9123 0000" required>
+        <br>
+        <div class="numberError">Wrong format.</div><br>
+        <label for="expiry">EXP.DATE (MM/YY) CVC</label>
+        <br>
+        <input type="number" id="expiryMonth" placeholder="MM">
+        <input type="number" id="expiryYear" placeholder="YY">
+        <input type="number" id="cvc" placeholder="eg. 123"><br>
+        <div class="dateError">Please fill out this field.</div>
+        <br>
+        <button type="button" class="confirm">Confirm</button>
+        </div>
+        <div class="add">
+            <div class="mark">
+            <img src="interactive-card-details-form-main/images/icon-complete.svg" alt="mark" width="60rem">
+            </div>
+            <div class="thanks">THANK YOU!</div>
+            <div class="extraText">We've added your card details...</div>
+            <button type="button" class="continue">Continue</button>
+        </div>
+    </form>
+</body>
+<script src="main.js"></script>
+</html>

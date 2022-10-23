@@ -1,0 +1,189 @@
+@font-face {
+    font-family: grotesk;
+    src: url(Fonts/SpaceGrotesk-Regular.ttf);
+}
+
+html body {
+    margin: 0;
+    font-family: grotesk;
+    color: white;
+    overflow: scroll;
+}
+
+
+.headBackground {
+    background-image: url(interactive-card-details-form-main/images/bg-main-mobile.png);
+    padding: 2rem 1rem 2.5rem 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.cvc {
+    z-index: 1;
+    position: relative;
+    top: -5.9rem;
+    left: 14rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.frontCard {
+    background-image: url(interactive-card-details-form-main/images/bg-card-front.png);
+    width: 20rem;
+    min-width: 20rem;
+    margin-left: 1rem;
+    background-size: contain;
+    position: absolute;
+    top: 8rem; 
+    z-index: 2;
+    background-repeat: no-repeat;
+}
+
+.logos {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    width: 60px;
+    align-items: center;
+}
+
+.digits {
+    letter-spacing: 0.22rem;
+    margin-top: 1.5rem;
+    padding-left: 0.75rem;
+    font-weight: 600;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.9rem;
+    padding: 0 .75rem 0 .75rem;
+    font-size: 0.8rem;
+    font-weight: 550;
+    padding-bottom: 1rem;
+    width: 16.56rem;
+}
+
+.info {
+    margin-top: 5rem;
+    padding: 1rem 1.3rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+label {
+    color: hsl(278, 68%, 11%);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+input {
+    all: unset;
+    color: hsl(279, 6%, 55%);
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 8px;
+    height: 2rem;
+    padding-left: 1rem;
+}
+
+input:focus {
+    color: hsl(278, 68%, 11%);
+    border: 1px solid hsl(278, 68%, 11%);
+}
+#inputName, #inputNumber {
+    min-width: 20rem;
+}
+
+.numberError, .nameError, .dateError {
+    display: none;
+    color: hsl(279, 6%, 55%);
+    font-weight: 600;
+    font-size: 0.75rem; 
+}
+
+#expiryMonth, #expiryYear {
+    width: 3.8rem;
+}
+
+#cvc {
+    width: 8rem;
+}
+
+.confirm {
+    all: unset;
+    width: 21rem;
+    color: hsl(270, 3%, 87%);
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 8px;
+    height: 3rem;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.confirm:hover, .continue:hover {
+    background-color: hsl(279, 6%, 55%);
+    color: white;
+}
+
+.add {
+    display: none;
+    text-align: center;
+    color: hsl(279, 6%, 55%);
+    font-weight: 600;
+}
+
+.mark {
+    display: flex;
+    justify-content: center;
+}
+
+.thanks {
+    color: hsl(278, 68%, 11%);
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin-top: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.continue {
+    all: unset; 
+    width: 21rem;
+    color: hsl(270, 3%, 87%);
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 8px;
+    height: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (min-width: 1000px) {
+    html body {
+        overflow-y: hidden;
+        display: flex;
+    }
+
+    .headBackground {
+       background-image: url(interactive-card-details-form-main/images/bg-main-desktop.png); 
+       height: 100vh;
+       width: 20rem;
+       background-size: cover;
+    }
+
+    #cardBack {
+        margin-left: 12rem;
+        margin-top: 18rem;
+    }
+
+    .frontCard {
+        margin-left: 12rem;
+    }
+
+    .info {
+        margin: 9rem 0 0 20rem;
+    }
+}
+
